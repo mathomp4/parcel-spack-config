@@ -1,0 +1,40 @@
+compilers:
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: []
+    operating_system: highsierra
+    paths:
+      cc: /usr/bin/clang
+      cxx: /usr/bin/clang++
+      f77: /usr/local/bin/gfortran
+      fc: /usr/local/bin/gfortran
+    spec: clang@10.0.0-apple
+    target: x86_64
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: []
+    operating_system: highsierra
+    paths:
+      cc: null
+      cxx: null
+      f77: /usr/local/bin/gfortran
+      fc: /usr/local/bin/gfortran
+    spec: gcc@6.3.0
+    target: x86_64
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: [gcc-gfortran/8.2.0]
+    operating_system: highsierra
+    paths:
+      cc: /Users/mathomp4/installed/Core/gcc-gfortran/8.2.0/bin/gcc
+      cxx: /Users/mathomp4/installed/Core/gcc-gfortran/8.2.0/bin/g++
+      f77: /Users/mathomp4/installed/Core/gcc-gfortran/8.2.0/bin/gfortran
+      fc: /Users/mathomp4/installed/Core/gcc-gfortran/8.2.0/bin/gfortran
+    spec: gcc@8.2.0
+    target: x86_64

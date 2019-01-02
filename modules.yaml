@@ -1,0 +1,43 @@
+modules:
+   enable::
+      - lmod
+   lmod:
+      verbose: True
+      hash_length: 0
+      whitelist:
+         - gcc
+      blacklist:
+         - '%clang@10.0.0-apple'
+      core_compilers: 
+         - 'gcc@8.2.0'
+      hierarchy:
+         - mpi
+      all:
+         suffixes:
+            '^openblas': openblas
+            '^netlib-lapack': netlib
+         filter:
+           environment_blacklist: ['CPATH', 'LIBRARY_PATH']
+         environment:
+            set:
+               '${PACKAGE}_ROOT': '${PREFIX}'
+      netlib-scalapack:
+         suffixes:
+            '^openmpi': openmpi
+            '^mpich': mpich
+      gcc:
+         environment:
+            set:
+               CC: gcc
+               CXX: g++
+               FC: gfortran
+               F90: gfortran
+               ESMA_FC: gfortran
+      openmpi:
+        environment:
+          set:
+            '${PACKAGE}': '${PREFIX}'
+
+
+
+

@@ -1,0 +1,9 @@
+packages:
+   hdf5:
+     variants: +fortran+szip+hl+threadsafe
+     # Note that cdo requires threadsafe, but hdf5 doesn't
+     # seem to want that with parallel. Hmm.
+   netcdf:
+     variants: +hdf4+dap
+   esmf:
+     variants: ~pnetcdf
