@@ -16,11 +16,14 @@ modules:
          suffixes:
             '^openblas': openblas
             '^netlib-lapack': netlib
+            '^veclibfort': veclibfort
          filter:
            environment_blacklist: ['CPATH', 'LIBRARY_PATH']
          environment:
             set:
                '${PACKAGE}_ROOT': '${PREFIX}'
+               'DIR_${PACKAGE}': '${PREFIX}'
+               '${PACKAGE}_DIR': '${PREFIX}'
       netlib-scalapack:
          suffixes:
             '^openmpi': openmpi
@@ -37,6 +40,9 @@ modules:
         environment:
           set:
             '${PACKAGE}': '${PREFIX}'
+      pfunit:
+        suffixes:
+          '^mpi': mpi
 
 
 

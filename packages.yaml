@@ -6,4 +6,8 @@ packages:
    netcdf:
      variants: +hdf4+dap
    esmf:
-     variants: ~pnetcdf
+     variants: ~pnetcdf~xerces
+   gftl:
+     variants: +pfunit
+   curl:
+     variants: ~darwinssl
