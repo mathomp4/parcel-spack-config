@@ -5,38 +5,3 @@ packages:
        mpi: [openmpi,mpich]
        blas: [veclibfort]
        lapack: [veclibfort]
-   openmpi:
-      modules:
-        openmpi@3.1.2%gcc@8.2.0: openmpi/3.1.2
-      buildable: False
-      version: [3.1.2]
-   cmake:
-     paths:
-       cmake@3.13.2: /usr/local
-     buildable: False
-     version: [3.13.2]
-   perl:
-     paths:
-       perl@5.28.1: /usr/local
-     buildable: False
-     version: [5.28.1]
-   bison:
-     paths:
-       bison@3.2.4: /usr/local/opt/bison
-     buildable: False
-     version: [3.2.4]
-   flex:
-     paths:
-       flex@2.6.3: /usr/local/opt/flex
-     buildable: False
-     version: [2.6.3]
-   m4:
-     paths:
-       m4@1.4.18: /usr/local/opt/m4
-     buildable: False
-     version: [1.4.18]
-   python:
-     modules:
-       python@2.7.15: Anaconda2/5.3.1
-     buildable: False
-     version: [2.7.15]
