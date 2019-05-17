@@ -3,7 +3,6 @@ modules:
   lmod:
     blacklist_implicits: false
     core_compilers:
-    - clang@10.0.0-apple
-    - gcc@6.3.0
+    - clang@10.0.1-apple
     hash_length: 7
     verbose: false
