@@ -1,14 +1,27 @@
 compilers:
 - compiler:
-    environment: {}
-    extra_rpaths: []
-    flags: {}
-    modules: []
-    operating_system: mojave
+    spec: clang@11.0.0-apple
     paths:
       cc: /usr/bin/clang
       cxx: /usr/bin/clang++
-      f77: null
-      fc: null
-    spec: clang@10.0.1-apple
+      f77:
+      fc:
+    flags: {}
+    operating_system: mojave
     target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@9.2.0
+    paths:
+      cc: /Users/mathomp4/spack/opt/spack/darwin-mojave-x86_64/clang-11.0.0-apple/gcc-9.2.0-utzl7fead5d2oaun5bgeggpsqagsh2tv/bin/gcc
+      cxx: /Users/mathomp4/spack/opt/spack/darwin-mojave-x86_64/clang-11.0.0-apple/gcc-9.2.0-utzl7fead5d2oaun5bgeggpsqagsh2tv/bin/g++
+      f77: /Users/mathomp4/spack/opt/spack/darwin-mojave-x86_64/clang-11.0.0-apple/gcc-9.2.0-utzl7fead5d2oaun5bgeggpsqagsh2tv/bin/gfortran
+      fc: /Users/mathomp4/spack/opt/spack/darwin-mojave-x86_64/clang-11.0.0-apple/gcc-9.2.0-utzl7fead5d2oaun5bgeggpsqagsh2tv/bin/gfortran
+    flags: {}
+    operating_system: mojave
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []

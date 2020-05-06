@@ -1,6 +1,6 @@
 packages:
    all:
-     compiler: [gcc@9.1.0]
+     compiler: [gcc@9.2.0]
      providers:
        mpi: [openmpi,mpich]
        blas: [veclibfort]

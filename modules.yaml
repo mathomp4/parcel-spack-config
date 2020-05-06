@@ -7,9 +7,9 @@ modules:
       whitelist:
          - gcc
       blacklist:
-         - '%clang@10.0.1-apple'
+         - '%clang@11.0.0-apple'
       core_compilers: 
-         - 'gcc@9.1.0'
+         - 'gcc@9.2.0'
       hierarchy:
          - mpi
       all:
