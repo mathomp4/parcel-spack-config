@@ -7,9 +7,9 @@ modules:
       whitelist:
          - gcc
       blacklist:
-         - '%clang@11.0.0-apple'
+         - '%clang@11.0.3-apple'
       core_compilers: 
-         - 'gcc@9.2.0'
+         - 'gcc@9.3.0'
       hierarchy:
          - mpi
       all:
@@ -35,7 +35,6 @@ modules:
                CXX: g++
                FC: gfortran
                F90: gfortran
-               ESMA_FC: gfortran
       openmpi:
         environment:
           set:

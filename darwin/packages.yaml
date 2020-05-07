@@ -1,13 +1,13 @@
 packages:
    all:
-     compiler: [gcc@9.2.0]
+     compiler: [gcc@9.3.0]
      providers:
        mpi: [openmpi,mpich]
        blas: [veclibfort]
        lapack: [veclibfort]
-   python:
-     modules:
-       python@2.7.16: GMAOpyD/Ana2019.03_py2.7
-       python@3.7.3: GMAOpyD/Ana2019.03_py3.7
-     buildable: False
-     version: [2.7.16, 3.7.3]
+   #python:
+     #modules:
+       #python@2.7.16: GMAOpyD/Ana2019.03_py2.7
+       #python@3.7.3: GMAOpyD/Ana2019.03_py3.7
+     #buildable: False
+     #version: [2.7.16, 3.7.3]
